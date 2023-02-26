@@ -16,14 +16,14 @@ app.use(expressLayouts)
 
 //import routes 
 const indexRoute = require('./routes/index')
-// const authRoute = require('./routes/auth')
+const authRoute = require('./routes/auth')
 // const bodypartRoute = require('./routes/bodypart')
 // const exerciseRoute = require('./routes/exercise')
 // const woplanRoute = require('./routes/woplan')
 
 //mount routes 
 app.use('/', indexRoute)
-// app.use('/',authRoute)
+app.use('/', authRoute)
 // app.use('/', bodypartRoute)
 // app.use('/', exerciseRoute)
 // app.use('/', woplanRoute)
