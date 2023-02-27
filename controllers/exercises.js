@@ -1,5 +1,7 @@
 // const Exercise = require('../models/Exercise')
 
+const Exercise = require("../models/Exercise")
+
 // exports.exercise_creat_get = (req, res)=>{
 //     res.render('/exercise')
 // }
@@ -29,6 +31,14 @@ exports.exercise_pushdown_get = (req, res)=>{
   
 }
 
-exports.auth_signup_get = (req, res)=>{
-    res.render('plan/index')
+exports.plan_view_get = (req, res)=>{
+    Exercise.find()
+    .then(exercises =>{
+        let formdata = req.body;
+         res.render('plan/index', {formdata} ) 
+    })
+    .catch(err=>{
+        console.log(err)
+    })
+   
 }
