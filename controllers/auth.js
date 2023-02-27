@@ -34,7 +34,7 @@ exports.auth_signin_get = (req, res)=>{
 
 
 exports.auth_signin_post = passport.authenticate('local',{
-    successRedirect:'/',
+    successRedirect:'/exercise/index',
     failureRedirect:'/auth/signin'
 })
 
