@@ -11,5 +11,5 @@ mongoose.connect(process.env.DATABASE_URL)
 // upon connection: 
 //console log to show that we are successfully connected
 mongoose.connection.on('connected', ()=>{
-    console.log('connected to database!')
+    console.log('connected Mongoose')
 })
