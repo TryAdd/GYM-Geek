@@ -11,6 +11,15 @@ exports.exercise_index_get = (req, res)=>{
 
 }
 
+exports.cardio_index_get = (req, res)=>{
+  res.render('cardio/index')
+
+}
+exports.wtype_index_get = (req, res)=>{
+  res.render('wtype/index')
+
+}
+
 exports.exercise_barbell_get = (req, res)=>{
     res.render('exercise/barbell')
   
