@@ -22,4 +22,4 @@ router.get('/cardio/index',exerciseCntrl.cardio_index_get)
 
 
 
-module.exports=router
+module.exports = router
