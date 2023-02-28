@@ -1,6 +1,8 @@
 <h2>WorkOut Plan</h2>
 
-<h1><%= name%></h1>
-<p>Sets: <%= formdata.sets %></p>
-<p>Weights: <%= formdata.weight %></p>
-<p>Reps: <%= formdata.reps %></p>
+  <%exercises.forEach(a=>{ %>
+    <p>Exercise: <%=a.exercise%></p>
+    <p>Sets: <%=a.sets%></p>
+    <p>Repetitions: <%=a.reps%></p>
+    <p>Weight: <%=a.weight%></p>
+<%})  %>
