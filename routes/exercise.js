@@ -12,13 +12,13 @@ router.get('/exercise/hammercurl',exerciseCntrl.exercise_hammercurl_get)
 router.get('/exercise/benchdip',exerciseCntrl.exercise_benchdip_get)
 router.get('/exercise/pushdown',exerciseCntrl.exercise_pushdown_get)
 
-router.post('/plan/index',exerciseCntrl.plan_view_post)
+// router.post('/plan/index',exerciseCntrl.plan_view_post)
 router.get('/plan/index',exerciseCntrl.plan_view_get)
 
 router.get('/cardio/index',exerciseCntrl.cardio_index_get)
 // router.post('/plan/index',exerciseCntrl.plan_view_get)
 
-
+router.post('/plan/index',exerciseCntrl.barbell_create_post)
 
 
 
