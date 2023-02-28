@@ -30,7 +30,7 @@ exports.auth_signup_post = (req,res)=>{
 
 exports.auth_signin_get = (req, res)=>{
     res.render('auth/signin')
-}
+} 
 
 
 exports.auth_signin_post = passport.authenticate('local',{
