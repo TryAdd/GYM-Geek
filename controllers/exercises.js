@@ -40,14 +40,22 @@ exports.exercise_pushdown_get = (req, res)=>{
   
 }
 
-exports.plan_view_get = (req, res)=>{
+exports.plan_view_post = (req, res)=>{
     Exercise.find()
     .then(exercises =>{
         let formdata = req.body;
-         res.render('plan/index', {formdata} ) 
+        let name = req.body.exercise  
+        console.log(name)
+         res.render('plan/index', {formdata,  name} ) 
     })
     .catch(err=>{
         console.log(err)
     })
+   
+}
+
+exports.plan_view_get = (req, res)=>{
+    
+
    
 }
