@@ -57,7 +57,7 @@ Weight: 20KG
 
 ## : Project Development
 
-We first came together as a team brainstormed ideas and sketched some basic wireframes on paper. Later on TryAdd put together wireframes using FIGMA, which included the ERD and the frontend.
+We first came together as a team brainstormed ideas and sketched some basic wireframes on paper. Later on TryAdd put together wireframes using FIGMA, which included the ERD and the frontend. We used Trello to coordinate and assign tasks and track our progress.
 
 <!-- insert screenshot -->
 
