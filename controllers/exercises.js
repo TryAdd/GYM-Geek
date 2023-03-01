@@ -64,6 +64,85 @@ exports.exercise_tbarrow_get = (req, res)=>{
   
 }
 
+//chest
+
+exports.exercise_dips_get = (req, res)=>{
+    res.render('exercise/dips')
+  
+}
+
+exports.exercise_benchpress_get = (req, res)=>{
+    res.render('exercise/benchpress')
+  
+}
+
+exports.exercise_cablechestpress_get = (req, res)=>{
+    res.render('exercise/cablechestpress')
+  
+}
+
+exports.exercise_cableflies_get = (req, res)=>{
+    res.render('exercise/cableflies')
+  
+}
+
+//core
+
+exports.exercise_kettlebell_get = (req, res)=>{
+    res.render('exercise/kettlebell')
+  
+}
+
+exports.exercise_crunches_get = (req, res)=>{
+    res.render('exercise/crunches')
+  
+}
+
+exports.exercise_situp_get = (req, res)=>{
+    res.render('exercise/situp')
+  
+}
+
+exports.exercise_plank_get = (req, res)=>{
+    res.render('exercise/plank')
+  
+}
+
+//legs
+
+exports.exercise_squat_get = (req, res)=>{
+    res.render('exercise/squat')
+  
+}
+
+
+exports.exercise_legpress_get = (req, res)=>{
+    res.render('exercise/legpress')
+  
+}
+
+exports.exercise_hamstring_get = (req, res)=>{
+    res.render('exercise/hamstring')
+  
+}
+
+//wholebody
+
+exports.exercise_burpees_get = (req, res)=>{
+    res.render('exercise/burpees')
+  
+}
+
+exports.exercise_romanian_get = (req, res)=>{
+    res.render('exercise/romanian')
+  
+}
+
+
+
+
+
+
 
 // exports.plan_view_get = (req, res)=>{
 //     Exercise.findById(1) 
