@@ -5,7 +5,7 @@ const exerciseSchema = mongoose.Schema({
     sets: {type:Number, required:true},
     weight: {type:Number, required:true},
     reps: {type:Number, required:true},
-    date: {type:Date, required:true},
+    // date: {type:Date, required:true},
 
 },{
     timestamps: true

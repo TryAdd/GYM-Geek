@@ -159,13 +159,13 @@ exports.exercise_romanian_get = (req, res)=>{
 // }
 
 exports.plan_view_get = (req, res)=>{
-    console.log("done")
+    // console.log("done")
 //HTTP GET - Load Article form
 // API => MODULE_FUNCTIONALITY_HTTP METHOD BELOW
 
     Exercise.find()
     .then((exercises) => {
-        console.log(exercises)
+        // console.log(exercises)
         res.render('plan/index', {exercises})
     })
     .catch(err => {  //you don't need to close this bracket because only one error
@@ -175,18 +175,25 @@ exports.plan_view_get = (req, res)=>{
 
 exports.exercise_delete_get =(req, res)=>{
     Exercise.findByIdAndDelete(req.query.id)
+    .then(()=>{
+        res.redirect('/plan/index')
+    })
+    .catch((err)=>{
+        console.log(err)
+    })
+
 }
     
 
 // HTTP POST - To Post the data 
 exports.barbell_create_post = (req,res) => {
-    console.log(req.body)
+    // console.log(req.body)
     let barbell = new Exercise(req.body) 
 
     // Save Exercise in the database
     barbell.save() //this is a js promise
     .then(() => {
-        console.log("saved")
+        // console.log("saved")
         res.redirect("/plan/index") //redirects to index page where we list exercise
 
     }) //then is only executed if exercise.save/js promise executed

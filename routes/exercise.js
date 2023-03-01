@@ -9,6 +9,9 @@ const exerciseCntrl = require('../controllers/exercises')
 router.get('/bodypart/index', exerciseCntrl.exercise_index_get)
 router.get('/wtype/index', isLoggedIn,exerciseCntrl.wtype_index_get)
 
+// for delete
+router.get("/exercise/delete", exerciseCntrl.exercise_delete_get)
+
 //arms routes
 
 router.get('/exercise/barbell',exerciseCntrl.exercise_barbell_get)
@@ -52,7 +55,7 @@ router.get('/exercise/romanian',exerciseCntrl.exercise_romanian_get)
 
 
 // router.post('/plan/index',exerciseCntrl.plan_view_post)
-router.get('/plan/index',exerciseCntrl.plan_view_get)
+router.get('/plan/index',isLoggedIn,exerciseCntrl.plan_view_get)
 
 router.get('/cardio/index',exerciseCntrl.cardio_index_get)
 // router.post('/plan/index',exerciseCntrl.plan_view_get)
