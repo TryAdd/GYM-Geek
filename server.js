@@ -20,7 +20,7 @@ app.use(expressLayouts)
 const indexRoute = require('./routes/index')
 const authRoute = require('./routes/auth')
 const exerciseRoute = require('./routes/exercise')
-// const bodypartRoute = require('./routes/bodypart')
+const bodypartRoute = require('./routes/bodypart')
 // const woplanRoute = require('./routes/woplan')
 
 
@@ -37,7 +37,7 @@ app.use(passport.session())
 app.use('/', indexRoute)
 app.use('/', authRoute)
 app.use('/', exerciseRoute)
-// app.use('/', bodypartRoute)
+app.use('/', bodypartRoute)
 // app.use('/', woplanRoute)
 
 
