@@ -5,7 +5,7 @@ exports.profile_get = (req, res) => {
     User.findById(req.session.passport.user)
     .then(profiledata => {
         // let profiledata = req.body
-        console.log(profiledata)
+        // console.log(profiledata)
         res.render("profile/index", {profiledata})
         
     })

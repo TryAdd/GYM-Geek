@@ -94,6 +94,9 @@ exports.plan_view_get = (req, res)=>{
     })  
 }
 
+exports.exercise_delete_get =(req, res)=>{
+    Exercise.findByIdAndDelete(req.query.id)
+}
     
 
 // HTTP POST - To Post the data 
