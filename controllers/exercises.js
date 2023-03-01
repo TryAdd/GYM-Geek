@@ -183,6 +183,7 @@ exports.exercise_delete_get =(req, res)=>{
     })
 
 }
+
     
 
 // HTTP POST - To Post the data 
