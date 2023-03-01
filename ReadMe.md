@@ -17,7 +17,7 @@ GYM Geek is an Exercise tracker app built using the MERN stack.
 ## 1: Sign Up
 Fill in the Username, Email Address, Password, Weight, Height.
 
-![This is an image](/Users/salman/SEI-03/project2/GYM-Geek/imgs/ss1.png)
+![This is an image](imgs/ss1.png)
 
 ## 2: Sign In
 Enter your Email Address and Password
