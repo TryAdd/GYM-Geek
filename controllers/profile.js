@@ -1,4 +1,5 @@
 const User = require('../models/User')
+const bcrypt = require('bcrypt')
 
 exports.profile_get = (req, res) => {
     // console.log('THE USER!!!!!', req.session.passport.user)
@@ -43,3 +44,25 @@ exports.profile_edit_post = (req, res) => {
     })
 }
 
+//change password - GET
+exports.profile_changpass_get = (req, res) => {
+    User.findById(req.user._id)
+        .then(user=> {
+            res.render('Profile/changepass', { user })
+        })
+        .catch(err => {
+            console.log(err)
+        })
+}
+
+//change password - Post
+exports.profile_changepass_post = (req, res) => {
+    const hashedPass = bcrypt.hashSync(req.body.password, 8)
+    User.findByIdAndUpdate(req.body.id, { password: hashedPass })
+        .then(() => {
+            res.redirect('/Profile/index')
+        })
+        .catch(err => {
+            console.log(err)
+        })
+}

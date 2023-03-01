@@ -15,5 +15,8 @@ router.put('/profile/edit', profileCntrl.profile_edit_post)
 router.get('/profile/index', profileCntrl.profile_get)
 
 
+//password:
+router.get('/profile/changepass', profileCntrl.profile_changpass_get)
+router.post('/profile/changepass', profileCntrl.profile_changepass_post)
 
 module.exports = router
