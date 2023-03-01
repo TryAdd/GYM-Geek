@@ -20,6 +20,7 @@ exports.wtype_index_get = (req, res)=>{
 
 }
 
+
 //arms
 
 exports.exercise_barbell_get = (req, res)=>{
