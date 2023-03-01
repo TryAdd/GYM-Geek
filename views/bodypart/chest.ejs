@@ -1,7 +1,34 @@
 <h1>Chest</h1>
 
 <br><hr>
-<a href="/exercise/dips"> Dips </a>
-<a href="/exercise/benchpress"> Bench Press </a>
-<a href="/exercise/cablechestpress"> Cable Chest Press </a>
-<a href="/exercise/cableflies"> Cables Flies</a> 
+
+
+
+<form method="POST" action="/plan/index"> 
+
+        <div class="form-group">
+            <select name="exercise" id="">
+                <option value="dips"> Dips</option>
+                <option value="benchpress">Bench Press</option>
+                <option value="cablechestpress">Cable Chest Press</option>
+                <option value="cableflies">Cables Flies</option>
+            </select>
+        </div>
+    <br>
+        <div class="form-group">
+            <label>Sets</label>
+            <input type="number" name="sets" class="form-control">
+        </div>
+    
+        <div class="form-group">
+            <label> Repetitions </label>
+            <input type="number" name="reps" class="form-control">
+        </div>
+        
+        <div class="form-group">
+            <label>Weights</label>
+            <input type="number" name="weight" class="form-control">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
