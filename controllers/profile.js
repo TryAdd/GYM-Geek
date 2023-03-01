@@ -14,3 +14,32 @@ exports.profile_get = (req, res) => {
     })
 } 
 
+
+// Edit page
+// GET
+exports.profile_edit_get = (req, res) => {
+    User.findByIdAndUpdate(req.query.id)
+    .then((profile) =>{
+        res.render("Profile/edit", {profile})
+    })
+    .catch(err=>{
+        console.log(err);
+    })
+}
+
+// POST
+exports.profile_edit_post = (req, res) => {
+    User.findByIdAndUpdate(req.query.id,
+        {
+        username: req.body.username,
+        weight: req.body.weight,
+        height: req.body.height
+    })
+    .then(() =>{
+        res.redirect("/Profile/index")
+    })
+    .catch(err=>{
+        console.log(err);
+    })
+}
+

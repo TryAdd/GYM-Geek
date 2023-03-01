@@ -222,8 +222,11 @@ p {
           <h1>Weight: <%= profiledata.weight %></h1>
 
           
+         <a href="/profile/edit?id=<%=profiledata._id%>">Edit</a>
 
-
+         <form method="POST" action="/profile/delete?id=<%=profiledata._id%>&_method=DELETE">
+          <button type="submit">Delete</button>
+      </form>
           
        
           
