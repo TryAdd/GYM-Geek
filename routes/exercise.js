@@ -6,6 +6,9 @@ const isLoggedIn = require('../lib/isLoggedIn')
 
 const exerciseCntrl = require('../controllers/exercises')
 
+// for delete
+router.get("/exercise/delete", exerciseCntrl.exercise_delete_get)
+
 
 
 //cardio or weight training

@@ -2,6 +2,7 @@ const express  = require('express')
 const router = express.Router()
 
 const profileCntrl = require("../controllers/profile")
+const isLoggedIn = require('../lib/isLoggedIn')
 
 // Method Override
 let methodOverride = require('method-override')
@@ -11,8 +12,8 @@ router.use(methodOverride('_method'))
 router.get('/profile/edit', profileCntrl.profile_edit_get)
 router.put('/profile/edit', profileCntrl.profile_edit_post)
 
+router.get('/profile/index', isLoggedIn,profileCntrl.profile_get)
 
-router.get('/profile/index', profileCntrl.profile_get)
 
 
 //password:
