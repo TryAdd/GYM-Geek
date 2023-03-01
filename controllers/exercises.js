@@ -7,7 +7,7 @@ const Exercise = require("../models/Exercise")
 // }
 
 exports.exercise_index_get = (req, res)=>{
-  res.render('exercise')
+  res.render('bodypart/index')
 
 }
 
@@ -19,6 +19,8 @@ exports.wtype_index_get = (req, res)=>{
   res.render('wtype/index')
 
 }
+
+//arms
 
 exports.exercise_barbell_get = (req, res)=>{
     res.render('exercise/barbell')
@@ -39,6 +41,29 @@ exports.exercise_pushdown_get = (req, res)=>{
     res.render('exercise/pushdown')
   
 }
+
+//back
+
+exports.exercise_bentover_get = (req, res)=>{
+    res.render('exercise/bentover')
+  
+}
+
+exports.exercise_latpulldown_get = (req, res)=>{
+    res.render('exercise/latpulldown')
+  
+}
+
+exports.exercise_deadlift_get = (req, res)=>{
+    res.render('exercise/deadlift')
+  
+}
+
+exports.exercise_tbarrow_get = (req, res)=>{
+    res.render('exercise/tbarrow')
+  
+}
+
 
 // exports.plan_view_get = (req, res)=>{
 //     Exercise.findById(1) 
