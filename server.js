@@ -21,6 +21,8 @@ const indexRoute = require('./routes/index')
 const authRoute = require('./routes/auth')
 const exerciseRoute = require('./routes/exercise')
 const bodypartRoute = require('./routes/bodypart')
+const profileRoute = require('./routes/profile')
+// const bodypartRoute = require('./routes/bodypart')
 // const woplanRoute = require('./routes/woplan')
 
 
@@ -38,6 +40,8 @@ app.use('/', indexRoute)
 app.use('/', authRoute)
 app.use('/', exerciseRoute)
 app.use('/', bodypartRoute)
+app.use('/', profileRoute)
+// app.use('/', bodypartRoute)
 // app.use('/', woplanRoute)
 
 

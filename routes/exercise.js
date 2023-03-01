@@ -46,4 +46,4 @@ router.post('/plan/index',exerciseCntrl.barbell_create_post)
 
 
 
-module.exports=router
+module.exports = router
