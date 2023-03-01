@@ -6,7 +6,7 @@ GYM Geek is an Exercise tracker app built using the MERN stack.
 * Mongoose
 * Express
 * React.js
-* JavaScript ES6, HTML5, SASS
+* JavaScript CSS, HTML5, 
 * JWT
 * Bcrypt
 * Git + Github
@@ -66,5 +66,6 @@ We first came together as a team brainstormed ideas and sketched some basic wire
 <!-- insert screenshot -->
 
 ## : Challenges
+Merging files coordinating github pulls/push
 
 ## : Wins
