@@ -1,3 +1,75 @@
-<p>Sets: <%= formdata.sets %></p>
-<p>Weights: <%= formdata.weight %></p>
-<p>Reps: <%= formdata.reps %></p>
+<style>
+  * {
+      font-family: inherit;
+  }
+  body {
+      background-image: url('https://st2.depositphotos.com/4112313/7047/v/450/depositphotos_70477245-stock-illustration-fitness-and-gym-hand-drawn.jpg');
+  }
+  h2 {
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  }
+  p {
+  text-align: center;
+
+  }
+  
+  .list-group {
+      width: fit-content;
+      display: flex;
+  }
+
+  #main {
+      align-items: center;
+      align-content: center;
+      margin: auto;
+      margin-bottom: 50px;
+      margin-right: 100px;
+      margin-left: 100px;
+  }
+
+  .cen{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  
+
+</style>
+
+<h2>WorkOut Plan</h2>
+
+<!-- <%exercises.forEach(a=>{ %>
+  <p>Exercise: <%=a.exercise%></p>
+  <p>Sets: <%=a.sets%></p>
+  <p>Repetitions: <%=a.reps%></p>
+  <p>Weight: <%=a.weight%></p>
+<%})  %> -->
+<div class="cen">
+<%exercises.forEach(a=>{ %>
+<div id="main">
+  <div class="list-group">
+  <a href="#" class="list-group-item active">
+    <h4 class="list-group-item-heading">Exercise: <%=a.exercise%> </h4>
+    <p class="list-group-item-text"></p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">Sets: <%=a.sets%></h4>
+    <p class="list-group-item-text"></p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">Repetitions: <%=a.reps%></h4>
+    <p class="list-group-item-text"></p>
+  </a>
+  <a href="#" class="list-group-item">
+      <h4 class="list-group-item-heading">Weight:<%=a.weight%> </h4>
+      <p class="list-group-item-text"></p>
+    </a>
+  <a href="/exercise/delete?id=<%= a._id %>"  class="list-group-item active">Delete</a>
+  <a href="#"  class="list-group-item active">Edit</a>
+</div>
+</div> 
+<%})  %>
+</div>

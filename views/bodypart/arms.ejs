@@ -1,0 +1,33 @@
+<h1> Arms </h1>
+
+<br><hr>
+
+
+<form method="POST" action="/plan/index"> 
+
+        <div class="form-group">
+            <select name="exercise" id="">
+                <option value="barbell">Barbell</option>
+                <option value="benchdip">Benchdip</option>
+                <option value="hammercurl">Hammer Curl</option>
+                <option value="pushdown">Push Down</option>
+            </select>
+        </div>
+    <br>
+        <div class="form-group">
+            <label>Sets</label>
+            <input type="number" name="sets" class="form-control">
+        </div>
+    
+        <div class="form-group">
+            <label> Repetitions </label>
+            <input type="number" name="reps" class="form-control">
+        </div>
+        
+        <div class="form-group">
+            <label>Weights</label>
+            <input type="number" name="weight" class="form-control">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
