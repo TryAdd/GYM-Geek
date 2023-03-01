@@ -1,0 +1,9 @@
+<form action="/profile/changepass?id=<%=user._id%>" method="POST">
+    <div> 
+        <label >Password</label>
+        <input type="password" name = "password">
+    </div>
+
+    <input type="hidden" value="<%=user._id%>" name="id">
+    <button type="submit">Change Password</button>
+</form>
