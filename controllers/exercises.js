@@ -20,7 +20,6 @@ exports.wtype_index_get = (req, res)=>{
 
 }
 
-
 // exports.plan_view_get = (req, res)=>{
 //     Exercise.findById(1) 
 //     .then(exercises =>{

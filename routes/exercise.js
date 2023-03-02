@@ -10,7 +10,6 @@ const exerciseCntrl = require('../controllers/exercises')
 router.get("/exercise/delete", exerciseCntrl.exercise_delete_get)
 
 
-
 //cardio or weight training
 router.get('/wtype/index', isLoggedIn,exerciseCntrl.wtype_index_get)
 router.get('/cardio/index',exerciseCntrl.cardio_index_get)
