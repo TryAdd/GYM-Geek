@@ -39,12 +39,11 @@ p {
 
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
-
   body {
       font: 300 13px/1.6 Roboto, Helvetica, Arial;
       color: #000000;
       position: relative;
-      background: #000000;
+      background: rgb(101, 101, 101);
       height: 100vh;
       text-align: center;
     /*background: #3f51b5;*/
@@ -97,7 +96,6 @@ p {
   .profile-card header:before{
     content: "";
     position: absolute;
-    background: url('http://ali.shahab.pk/blur.php?img=http://ali.shahab.pk/ali-shahab.jpg&x=60') no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -188,6 +186,16 @@ p {
     width: 100%;
     display: block;
   }
+  .qa{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    display: space-between;
+  }
+
+  .qa:hover{
+    color: #888;
+  }
 </style>
 <h1>Profile</h1>
 
@@ -219,8 +227,8 @@ p {
           <h1>Weight:  <%= profiledata.weight %></h1>
 
           
-         <a href="/profile/edit?id=<%=profiledata._id%>">Edit</a>
-         <a href="/profile/changepass?id=<%=profiledata._id%>">changepass</a>
+         <a href="/profile/edit?id=<%=profiledata._id%>" class="qa">Edit</a>
+         <a href="/profile/changepass?id=<%=profiledata._id%>" class="qa">changepass</a>
 
        
           

@@ -17,7 +17,11 @@ router.get('/cardio/index',exerciseCntrl.cardio_index_get)
 router.get('/bodypart/index', exerciseCntrl.exercise_index_get)
 
 //bodypart exercises
-router.get('/plan/index',exerciseCntrl.plan_view_get)
+router.get('/plan/index',isLoggedIn,exerciseCntrl.plan_view_get)
 router.post('/plan/index',exerciseCntrl.barbell_create_post)
+
+// for edit woplan
+router.get('/bodypart/update',exerciseCntrl.exercise_edit_get)
+router.post('/bodypart/update',exerciseCntrl.exercise_edit_post)
 
 module.exports = router

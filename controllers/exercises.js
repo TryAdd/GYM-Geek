@@ -80,3 +80,22 @@ exports.barbell_create_post = (req,res) => {
         // res.send('Please try again later!!!')
     }) //if not, then whatever happens is caught by catch
 }
+exports.exercise_edit_get = (req,res) => {
+    Exercise.findByIdAndUpdate(req.query.id)
+    .then(exercise =>{
+        res.render("bodypart/update",{exercise})
+    })
+    .catch(err=>{
+        console.log(err)
+    })
+}
+exports.exercise_edit_post = (req,res) => {
+    // console.log(req.body)
+    Exercise.findByIdAndUpdate(req.body.id, req.body)
+    .then(()=>{
+        res.redirect("/plan/index")
+    })
+    .catch(err=>{
+        console.log(err)
+    })
+}
