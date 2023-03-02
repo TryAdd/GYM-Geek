@@ -1,7 +1,32 @@
 <h1>Legs</h1>
 
 <br><hr>
-<a href="/exercise/squat"> Squat </a>
-<a href="/exercise/deadlift"> Deadlift </a>
-<a href="/exercise/legpress"> Leg Press </a>
-<a href="/exercise/hamstring"> Hamstring Curls</a>
+
+<form method="POST" action="/plan/index"> 
+
+        <div class="form-group">
+            <select name="exercise" id="">
+                <option value="squat">Squat</option>
+                <option value="deadlift">Deadlift</option>
+                <option value="legpress">Leg Press</option>
+                <option value="hamstring">Hamstring Curl</option>
+            </select>
+        </div>
+    <br>
+        <div class="form-group">
+            <label>Sets</label>
+            <input type="number" name="sets" class="form-control">
+        </div>
+    
+        <div class="form-group">
+            <label> Repetitions </label>
+            <input type="number" name="reps" class="form-control">
+        </div>
+        
+        <div class="form-group">
+            <label>Weights</label>
+            <input type="number" name="weight" class="form-control">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>

@@ -47,6 +47,16 @@ exports.auth_signout_get = (req, res)=>{
     })
 } 
 
+exports.auth_signout_get = (req, res) => {
+    req.logout(function (err) {
+        if (err) {
+            return next(err)
+        }
+    })
+    res.redirect('/auth/signin')
+}
+
+
 // const User = require('../models/User')
 // const bcrypt = require('bcrypt')
 
